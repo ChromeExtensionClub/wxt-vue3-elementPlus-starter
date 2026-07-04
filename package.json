@@ -1,11 +1,13 @@
 {
   "name": "wxt-vue-starter",
-  "description": "manifest.json description",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "manifest.json description",
   "scripts": {
     "commit": "git-cz",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
     "build": "wxt build",
@@ -29,9 +31,11 @@
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^9.1.0",
     "@iconify/vue": "^5.0.1",
     "@wxt-dev/module-vue": "^1.0.3",
     "cz-git": "^1.13.1",
+    "eslint": "^10.6.0",
     "sass": "^1.101.0",
     "typescript": "^5.9.3",
     "unplugin-auto-import": "^21.0.0",

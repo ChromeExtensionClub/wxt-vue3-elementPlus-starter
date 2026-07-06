@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ChromeExtensionClub/wxt-vue3-elementPlus-starter/compare/v0.0.2...v0.0.3) (2026-07-06)
+
+
+### CI
+
+* **release:** :ferris_wheel: Change the package manager in release.yml to bun ([d87d372](https://github.com/ChromeExtensionClub/wxt-vue3-elementPlus-starter/commit/d87d37212a6637350c60989dc8a66df247bb037f))
+
+
+### Docs
+
+* **AGENTS.md:** :memo: add AGENTS.md ([53efa82](https://github.com/ChromeExtensionClub/wxt-vue3-elementPlus-starter/commit/53efa823d5af372355fe4b8950498aec72e39d33))
+
 ### [0.0.2](https://github.com/ChromeExtensionClub/wxt-vue3-elementPlus-starter/compare/v0.0.1...v0.0.2) (2026-07-06)
 
 

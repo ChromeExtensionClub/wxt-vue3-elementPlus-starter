@@ -1,0 +1,102 @@
+// ========================================
+//  WXT Vue Starter – Global SCSS Variables
+//  Convention: cus- prefix for custom vars
+// ========================================
+
+// -------- Theme Colors (overriding ElementPlus defaults) --------
+
+// primary
+$cus-color-primary: #409eff !default;
+$cus-color-primary-light-3: #79bbff !default;
+$cus-color-primary-light-5: #a0cfff !default;
+$cus-color-primary-light-7: #c6e2ff !default;
+$cus-color-primary-light-8: #d9ecff !default;
+$cus-color-primary-light-9: #ecf5ff !default;
+$cus-color-primary-dark-2: #337ecc !default;
+
+// success
+$cus-color-success: #67c23a !default;
+$cus-color-success-light-3: #95d475 !default;
+$cus-color-success-light-5: #b3e19d !default;
+
+// warning
+$cus-color-warning: #e6a23c !default;
+$cus-color-warning-light-3: #eebe77 !default;
+$cus-color-warning-light-5: #f3d19e !default;
+
+// danger
+$cus-color-danger: #f56c6c !default;
+$cus-color-danger-light-3: #f89898 !default;
+$cus-color-danger-light-5: #fab6b6 !default;
+
+// info
+$cus-color-info: #909399 !default;
+$cus-color-info-light-3: #b1b3b8 !default;
+$cus-color-info-light-5: #c8c9cc !default;
+
+// -------- Text --------
+$cus-text-color-primary: #303133 !default;
+$cus-text-color-regular: #606266 !default;
+$cus-text-color-secondary: #909399 !default;
+$cus-text-color-placeholder: #a8abb2 !default;
+
+// -------- Border --------
+$cus-border-color-base: #dcdfe6 !default;
+$cus-border-color-light: #e4e7ed !default;
+$cus-border-color-lighter: #ebeef5 !default;
+$cus-border-color-extra-light: #f2f6fc !default;
+
+// -------- Background --------
+$cus-bg-color: #ffffff !default;
+$cus-bg-color-page: #f5f7fa !default;
+
+// -------- Layout --------
+$cus-popup-min-width: 320px;
+$cus-popup-max-width: 420px;
+$cus-side-panel-min-width: 280px;
+
+// ========================================
+//  Map to ElementPlus SCSS variables
+// ========================================
+$--el-color-primary: $cus-color-primary;
+$--el-color-primary-light-3: $cus-color-primary-light-3;
+$--el-color-primary-light-5: $cus-color-primary-light-5;
+$--el-color-primary-light-7: $cus-color-primary-light-7;
+$--el-color-primary-light-8: $cus-color-primary-light-8;
+$--el-color-primary-light-9: $cus-color-primary-light-9;
+$--el-color-primary-dark-2: $cus-color-primary-dark-2;
+
+$--el-color-success: $cus-color-success;
+$--el-color-warning: $cus-color-warning;
+$--el-color-danger: $cus-color-danger;
+$--el-color-info: $cus-color-info;
+
+$--el-text-color-primary: $cus-text-color-primary;
+$--el-text-color-regular: $cus-text-color-regular;
+$--el-text-color-secondary: $cus-text-color-secondary;
+$--el-text-color-placeholder: $cus-text-color-placeholder;
+
+$--el-border-color-base: $cus-border-color-base;
+$--el-bg-color: $cus-bg-color;
+$--el-bg-color-page: $cus-bg-color-page;
+
+// -------- Forward element-plus theme --------
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': $cus-color-primary,
+    ),
+    'success': (
+      'base': $cus-color-success,
+    ),
+    'warning': (
+      'base': $cus-color-warning,
+    ),
+    'danger': (
+      'base': $cus-color-danger,
+    ),
+    'info': (
+      'base': $cus-color-info,
+    ),
+  )
+);

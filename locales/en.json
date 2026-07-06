@@ -1,0 +1,43 @@
+{
+  "appName": "WXT Vue Starter",
+  "appDescription": "Enterprise-grade Chrome extension starter powered by WXT, Vue 3, TypeScript, Pinia, and Element Plus.",
+  "common": {
+    "browserLanguage": "Browser language",
+    "counter": "Counter",
+    "dark": "Dark",
+    "followSystem": "Follow system",
+    "home": "Home",
+    "light": "Light",
+    "reset": "Reset",
+    "settings": "Settings",
+    "theme": "Theme"
+  },
+  "popup": {
+    "description": "Popup keeps a lightweight workflow with its own router and Pinia instance.",
+    "homeDescription": "Shared state is synchronized through WXT storage, while this popup owns its own navigation tree.",
+    "increment": "Increment",
+    "incrementByBackground": "Increment via background",
+    "openOptions": "Open options page",
+    "settingsHint": "WXT i18n follows the browser locale. Change the browser language to switch translations."
+  },
+  "options": {
+    "about": "About",
+    "aboutDescription": "This starter uses native WXT i18n, per-entry router instances, and isolated Pinia roots.",
+    "currentLocaleHint": "The current translation locale comes from browser.i18n / @wxt-dev/i18n.",
+    "general": "General",
+    "resetAll": "Reset all synced settings",
+    "resetSuccess": "Settings reset successfully.",
+    "title": "Extension Options"
+  },
+  "sidepanel": {
+    "overview": "Overview",
+    "overviewDescription": "The side panel is a dedicated SPA with its own router and state container.",
+    "tools": "Tools",
+    "toolsDescription": "Use this view to inspect shared theme and counter state across contexts."
+  },
+  "content": {
+    "close": "Close",
+    "description": "Mounted in Shadow DOM with an isolated Vue app.",
+    "title": "Content Widget"
+  }
+}

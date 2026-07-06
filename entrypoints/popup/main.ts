@@ -1,5 +1,17 @@
-import { createApp } from 'vue'
+import { createExtensionApp } from '@/lib/create-extension-app'
+import { useAppStore } from '@/stores/app'
 import App from './App.vue'
-import './style.css'
+import router from './router'
+import '@/assets/styles/global.scss'
 
-createApp(App).mount('#app')
+async function bootstrap() {
+  const { app, pinia } = createExtensionApp(App, { router })
+  const appStore = useAppStore(pinia)
+
+  await appStore.init()
+  await router.isReady()
+
+  app.mount('#app')
+}
+
+void bootstrap()

@@ -1,30 +1,64 @@
-<script lang="ts" setup>
-import HelloWorld from '@/components/HelloWorld.vue'
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
+import { i18n } from '@/lib/i18n'
+
+const route = useRoute()
 </script>
 
 <template>
-  <div>
-    <a href="https://wxt.dev" target="_blank">
-      <img src="/wxt.svg" class="logo" alt="WXT logo">
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo">
-    </a>
-  </div>
-  <HelloWorld msg="WXT + Vue" />
+  <el-container class="options-page">
+    <el-header class="page-header">
+      <div>
+        <h1>{{ i18n.t('options.title') }}</h1>
+        <p>{{ i18n.t('appDescription') }}</p>
+      </div>
+    </el-header>
+
+    <el-main class="page-main">
+      <el-menu mode="horizontal" :default-active="route.path" router>
+        <el-menu-item index="/">
+          {{ i18n.t('options.general') }}
+        </el-menu-item>
+        <el-menu-item index="/about">
+          {{ i18n.t('options.about') }}
+        </el-menu-item>
+      </el-menu>
+
+      <div class="view-container">
+        <router-view />
+      </div>
+    </el-main>
+  </el-container>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style scoped lang="scss">
+.options-page {
+  min-height: 100vh;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #54bc4ae0);
+
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 32px 32px 8px;
+
+  h1 {
+    color: $cus-color-primary;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: $cus-text-color-secondary;
+  }
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.page-main {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px 32px;
+}
+
+.view-container {
+  margin-top: 24px;
 }
 </style>

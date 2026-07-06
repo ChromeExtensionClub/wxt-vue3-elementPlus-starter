@@ -1,7 +1,7 @@
 {
   "name": "wxt-vue-starter",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Enterprise-grade Chrome Extension Starter powered by WXT + Vue3 + TypeScript + ElementPlus",
   "scripts": {
